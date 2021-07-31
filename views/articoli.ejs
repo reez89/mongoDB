@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <% elencoArticoli.forEach(articolo => { %>
+            <article>
+                <h1><%= articolo.titolo %></h1>
+                <p><%= articolo.testo %></p>
+            </article>
+        <% }); %>
+    </main> 
+    <%- include('partials/footer') %>
+</body>
+</html>
